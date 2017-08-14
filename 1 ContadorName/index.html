@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	<title>First AngularJS App</title>
+</head>
+<body ng-app='myFirstApp'>
+	<h1>Hello Bitches !</h1>
+	<div ng-controller="MyFirstController">
+		<div>
+			<!--Example SCOPE-->
+			{{name}} 
+			{{sayHello()}}
+		</div>
+		<div>
+			<!-- ng-keyup evento al presionar tecla-->
+			<input type="text" ng-model="name" ng-keyup="displayNumeric();">
+		</div>
+		
+		<div>
+			Contador del nombre de una persona: 
+			{{totalvalue}}
+			
+		</div>
+	
+	
+	</div>
+</body>
+</html>
